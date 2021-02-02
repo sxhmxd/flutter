@@ -47,7 +47,8 @@ flutter:
   assets:
      - images/org.png
      - images/blackList.png
-     - images/business.png
+     - images/bg-icon.png
+     - images/bg-icon-y.png
      - images/car.png
      - images/card1.png
      - images/goods.png

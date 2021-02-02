@@ -13,8 +13,6 @@ class RandomWordsState extends State<RandomWords> {
   @override
 
   Widget build(BuildContext context) {
-
-
     void _pushSaved() {
       Navigator.of(context).push(
         new MaterialPageRoute(
@@ -46,13 +44,11 @@ class RandomWordsState extends State<RandomWords> {
       );
     }
     return new Scaffold (
-      appBar: new AppBar(
-        title: new Text('Startup Name Generator'),
-        actions: <Widget>[
-          new IconButton(icon: new Icon(Icons.list), onPressed: _pushSaved),
-        ],
+      floatingActionButton: new FloatingActionButton(
+          onPressed:_pushSaved,
+        tooltip:'Increment',
+        child: new Icon(Icons.add),
       ),
-
       body: _buildSuggestions(),
     );
   }
@@ -103,5 +99,6 @@ class RandomWordsState extends State<RandomWords> {
         });
       },
     );
+
   }
 }

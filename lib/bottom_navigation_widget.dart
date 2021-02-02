@@ -12,20 +12,21 @@ class MainPage extends StatefulWidget{
 class MainPageState extends State <MainPage>{
   int currentIndex = 0;
   final items = [
-    BottomNavigationBarItem(icon: Image(image: AssetImage('images/blackList.png',)), title: Text
+    BottomNavigationBarItem(icon: Image(image: AssetImage('images/bg-icon-y.png',)), title: Text
       ('首页'),activeIcon: Image(image:
     AssetImage
-      ('images/car'
+      ('images/bg-icon'
         '.png'))),
     BottomNavigationBarItem(icon: Image(image: AssetImage('images/card1.png')),
         title:
-        Text("行情"),activeIcon: Image(image: AssetImage('images/goods.png'))),
-    BottomNavigationBarItem(icon: Image(image: AssetImage('images/icpass.png')),
+        Text("行情"),activeIcon: Image(image: AssetImage('images/icpass.png'))),
+
+    BottomNavigationBarItem(icon: Image(image: AssetImage('images/goods.png')),
         title: Text
           ("交易"),activeIcon: Image
           (image:
-        AssetImage('images/org.png'),)),
-    BottomNavigationBarItem(icon: Image(image: AssetImage('images/business.png')),
+        AssetImage('images/blackList.png'),)),
+    BottomNavigationBarItem(icon: Image(image: AssetImage('images/car.png')),
         title: Text
           ("资产"),activeIcon: Image(image:
         AssetImage('images/org.png'),)),
