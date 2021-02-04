@@ -33,7 +33,7 @@ class MainPageState extends State <MainPage>{
   ];
   final bodyLists = [
     RandomWords(),
-    LoginPage(),
+    MyHomePage(),
     MyHomePage(),
     RandomWords(),
   ];

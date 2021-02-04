@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'bottom_navigation_widget.dart';
 
 
 class LoginPage extends StatefulWidget {
@@ -208,7 +209,8 @@ class _LoginPageState extends State<LoginPage> {
             //只有输入通过验证，才会执行这里
             _formKey.currentState.save();
             //todo 登录操作
-
+       ;
+            Navigator.pushAndRemoveUntil( context, new MaterialPageRoute(builder: (context) => new MainPage()),(route) => route == null,);
             print("$_username + $_password");
           }
 
